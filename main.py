@@ -1,22 +1,25 @@
-print("Welcome to Grade Calculator!")
-name = input("Enter student name: ")
-mark1 = int(input("Enter mark for Subject 1: "))
-mark2 = int(input("Enter mark for Subject 2: "))
-mark3 = int(input("Enter mark for Subject 3: "))
+import random
 
-avg = (mark1 + mark2 + mark3) / 3
+def number_guessing_game():
+    print("Welcome to the Number Guessing Game!")
+    print("I'm thinking of a number between 1 and 100.")
 
-if avg >= 90:
-    grade = 'A'
-elif avg >= 75:
-    grade = 'B'
-elif avg >= 60:
-    grade = 'C'
-elif avg >= 45:
-    grade = 'D'
-else:
-    grade = 'F'
+    secret_number = random.randint(1, 100)
+    attempts = 0
 
-print(f"\nStudent Name: {name}")
-print(f"Average Marks: {avg}")
-print(f"Grade: {grade}")
+    while True:
+        try:
+            guess = int(input("Enter your guess: "))
+            attempts += 1
+
+            if guess < secret_number:
+                print("Too low! Try again.")
+            elif guess > secret_number:
+                print("Too high! Try again.")
+            else:
+                print(f"🎉 Congratulations! You guessed it right in {attempts} attempts.")
+                break
+        except ValueError:
+            print("⚠️ Please enter a valid number.")
+
+number_guessing_game()
