@@ -8,8 +8,7 @@ A simple Python program to calculate student grades based on marks entered by th
 #  Project Goal
 To build a basic grade calculator and manage the project using GitHub features like Issues, Kanban board, and proper commits.
 
-
-#Team Members
+# Team Members
 - Navaneet
 
 # Tech Used
