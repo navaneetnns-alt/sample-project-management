@@ -5,7 +5,7 @@ This repository contains a simple project demonstrating Agile workflow using Git
 # Project Idea
 A simple Python program to calculate student grades based on marks entered by the user.
 
-##  Project Goal
+#  Project Goal
 To build a basic grade calculator and manage the project using GitHub features like Issues, Kanban board, and proper commits.
 
 
