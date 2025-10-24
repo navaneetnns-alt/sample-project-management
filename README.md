@@ -2,6 +2,9 @@
 
 This repository contains a simple project demonstrating Agile workflow using GitHub.
 
+# number-guessing-game
+This repository contains a simple Python project — a fun command-line Number Guessing Game.
+
 
 **Description**  
 A Python program where the computer randomly selects a number between 1 and 100, and the user tries to guess it.
